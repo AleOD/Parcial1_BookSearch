@@ -10,6 +10,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+	background-color: #caf0f8;
 }
 
 /** Global **/
@@ -80,4 +81,20 @@ img{
 .nav a:hover{
 	color:#48cae4;
 	
+}
+.main-container{
+	background-color: #caf0f8;
+}
+.container-search{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 5rem;
+}
+.container-search input{
+	width: 100rem;
+	border: 5px solid #F5DD90;
+	border-radius: 3rem;
+	font-size: 5rem;
+	text-align: left;
 }

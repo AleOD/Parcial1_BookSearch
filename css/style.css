@@ -98,3 +98,9 @@ img{
 	font-size: 5rem;
 	text-align: left;
 }
+.btn{
+	margin:1rem 0 0 1rem;
+}
+.btn:hover{
+	cursor:pointer;
+}

@@ -146,3 +146,13 @@ img{
 .card h3{
 	padding-left: 2rem;
 }
+
+.grid-flex{
+	display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+.center-columns{
+	justify-content: center;
+}

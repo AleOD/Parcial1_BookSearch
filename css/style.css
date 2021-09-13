@@ -146,3 +146,41 @@ img{
 .card h3{
 	padding-left: 2rem;
 }
+
+.grid-flex{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.center-columns{
+	justify-content: center;
+}
+.col-12{
+	flex: 0 0 100%;
+}
+.col-10{
+	flex: 0 0 calc(83.3% - 1rem);
+}
+
+.form-contact{
+	background-color: #ffffff;
+    padding: 5rem;
+}
+.form-contact .campo{
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.form-contact .campo label{
+	flex: 0 0 8rem;
+}
+.form-contact .campo input:not([type="submit"]), .form-contact textarea{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+.form-contact textarea{
+    height: 20rem;
+}
+

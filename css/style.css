@@ -32,11 +32,11 @@ h2{
 }
 
 h3{
-	font-size: 3.2rem;
+	font-size: 2.5rem;
 }
 
 h4{
-	font-size: 2.8rem;
+	font-size: 2rem;
 }
 
 img{
@@ -60,11 +60,17 @@ img{
 	border-left: 0;
 	height: 30rem;
 }
-.container-header h1{
+.header h1{
 	text-align: center;
 	font-weight: 400;
 	color: #ffffff;
 	border: none;
+}
+.header a{
+	text-decoration: none;
+}
+.header a:hover{
+	color:#F5DD90;
 }
 .nav{
 	display: flex;
@@ -80,7 +86,7 @@ img{
 	margin:auto;
 }
 .nav a:hover{
-	color:#48cae4;
+	color:#586BA4;
 	
 }
 .main-container{
@@ -115,10 +121,28 @@ img{
 	color: #324376;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-.results-container{
+.grid{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 5rem;
 	margin: 10rem 10rem;
 	padding: 1rem 2rem;
+}
+.grid-about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15rem;
+	margin: 5rem 5rem;
+	padding: 1rem 2rem;
+}
+
+.card{
+	background-color: #F5DD90;
+	font-size: 2.4rem;
+	padding: 1rem;
+	color: #ffffff;
+	border-radius: 2rem;
+}
+.card h3{
+	padding-left: 2rem;
 }

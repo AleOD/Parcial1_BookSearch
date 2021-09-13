@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Book Finder</title>
+    <title>Book Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
@@ -17,16 +17,23 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact Us</a>
             </nav>
-            <h1>Book Finder</h1>                   
+            <h1>Book Search</h1>                   
         </div>
     </header>
-    <div class="main-container container">
+    <div class="container">
         <div id="input" class="container-search">
-            <input id="search" type="text" placeholder=" search books">
+            <input id="search" type="text" placeholder=" type something...">
             <a id="search-btn" class="btn">
                 <img src="img/search.png" alt="search-btn">
             </a>
         </div>
     </div>
+
+    <main class="results container">
+        <h2>Results</h2>
+        <div id="output" class="results-container">
+
+        </div>
+    </main>
 </body>
 </html>

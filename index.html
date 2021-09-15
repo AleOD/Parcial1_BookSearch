@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">        
@@ -27,18 +29,18 @@
     <div class="container">
         <div id="input" class="container-search">
             <input id="search" type="text" placeholder=" type something...">
-            <a id="search-btn" class="btn" onclick="searchBook()">
+            <a id="search-btn" class="btn-search" onclick="searchBook()">
                 <img src="img/search.png" alt="search-btn">
             </a>
         </div>
     </div>
 
-    <main class="results container">
+    <section class="container-results">
         <h2>Results</h2>
-        <div id="output" class="grid">
-
+        <div id="results" class="grid-card card-res">
         </div>
-    </main>
+    </section>
+
     <script src="search.js"> </script>
 </body>
 </html>

@@ -113,14 +113,33 @@ img{
 }
 
 /** Search Results  **/
-.results{
-	visibility: hidden;
+.container-results{
+	max-width: 1500px;
+	width: 95%;
+	margin: 0 auto;
 }
-.results h2{
+
+.container-results h2{
 	padding-top: 3rem;
 	color: #324376;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+.card-res{
+	background-color: #F5DD90;
+	font-size: 1.5rem;
+	color: #ffffff;
+	border-radius: 2rem;
+}
+.card-res h5{
+	font-size: 2rem;
+}
+.card-res img{
+	border-radius: 1rem;
+	border-color:;
+}
+
+
+/** About **/
 .grid{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -128,7 +147,7 @@ img{
 	margin: 10rem 10rem;
 	padding: 1rem 2rem;
 }
-.grid-about{
+.grid-card{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15rem;

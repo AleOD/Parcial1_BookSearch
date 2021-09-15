@@ -78,11 +78,14 @@ function formatPrint(titles,authors,publishers,bookLinks,bookImg){
   var htmlCard =
   `
           <div>
-            <h5 class =""> ${titles} </h5>
-            <p class =""> Author: ${authors} </p>
-            <p class =""> Publisher: ${publishers} </p>
-            <img src = "${bookImg}">
-            <p class =""> link: ${bookLinks} </p>
+            <h5 > ${titles} </h5>
+            <p > Author: ${authors} </p>
+            <p > Publisher: ${publishers} </p>            
+            <p > link: ${bookLinks} </p>
+          </div>
+          
+          <div>
+          <img src = "${bookImg}">
           </div>
 
   `

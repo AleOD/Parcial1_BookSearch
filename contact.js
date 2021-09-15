@@ -31,6 +31,3 @@ const a = document.createElement("a");
   document.body.removeChild(a);
 
 }
-}
-
-

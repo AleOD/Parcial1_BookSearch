@@ -105,10 +105,10 @@ img{
 	font-size: 3rem;
 	text-align: left;
 }
-.btn{
+.btn-search{
 	margin:1rem 0 0 1rem;
 }
-.btn:hover{
+.btn-search:hover{
 	cursor:pointer;
 }
 
@@ -121,21 +121,43 @@ img{
 
 .container-results h2{
 	padding-top: 3rem;
+	padding-left: 8rem;
 	color: #324376;
+	font-size: 5rem;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .card-res{
-	background-color: #F5DD90;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #ffffff;
 	border-radius: 2rem;
 }
 .card-res h5{
-	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 3rem;
+	border-bottom: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
-.card-res img{
-	border-radius: 1rem;
-	border-color:;
+.card-res p{
+	margin-top: 0;
+}
+.cont-2{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border-radius: 2rem;
+	background-color: #F5DD90;
+	padding: 2rem;
+}
+.cont-2 img{
+	border-radius: 1.5rem;
+	max-width: 35%;
+	height: 25rem;
+	margin-left: 20rem;
+}
+.cont-2 a{
+	text-decoration: none;
+	color:white;
 }
 
 
@@ -206,7 +228,7 @@ img{
     display: flex;
     justify-content: flex-end;
 }
-.btn-send{
+.btn{
 	display: inline-block;
 	text-align: center;
 	padding: 1rem 3rem;
@@ -222,7 +244,7 @@ img{
 	border-radius: 1rem;
 	border-color: #f4a261;
 }
-.btn-send:hover{
+.btn:hover{
 	background-color: #e76f51;
 	border-color: #e76f51;
 	cursor: pointer;

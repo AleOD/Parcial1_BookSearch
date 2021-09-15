@@ -59,7 +59,7 @@ function printResults(res){
     img = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
 
-  document.getElementById("results").innerHTML += '<div">' + formatPrint(title1,author1,publisher1,bookLink1,img) + '</div>';
+  document.getElementById("results").innerHTML += '<div>' + formatPrint(title1,author1,publisher1,bookLink1,img) + '</div>';
 
 
     //image missing
@@ -77,17 +77,15 @@ function printResults(res){
 function formatPrint(titles,authors,publishers,bookLinks,bookImg){
   var htmlCard =
   `
-          <div>
+          <div class ="cont-2">
             <h5 > ${titles} </h5>
             <p > Author: ${authors} </p>
-            <p > Publisher: ${publishers} </p>            
-            <p > link: ${bookLinks} </p>
+            <p > Publisher: ${publishers} </p>
+            <img src = "${bookImg}">
+            <div class="btn">
+            <a href="${bookLinks} ">Go to Book</a>
+            </div>
           </div>
-          
-          <div>
-          <img src = "${bookImg}">
-          </div>
-
-  `
+            `
   return htmlCard;
 }

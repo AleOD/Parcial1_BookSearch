@@ -1,7 +1,7 @@
 var item, title, author, publisher, link, img;
 var displayList = document.getElementById("results");
 var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=search+";
-//var placeHldr = '<img src = '
+var placeHldr = '<img src ="img/emptyImg">';
 var searchTerm;
 var data;
 
@@ -25,10 +25,6 @@ function searchBook(){
   .then(function(res) {   // si hay exito
      res.json()
      .then(function(myjson) {
-      // console.log("el resultado del error es");
-      // console.log(myjson);
-      // console.log("Estos fueron todos los encontrados");
-      // console.log(myjson.totalItems);
       if(myjson.totalItems>0){
        printResults(myjson);        
       }
@@ -60,9 +56,10 @@ function printResults(res){
     author1 = item.volumeInfo.authors;
     publisher1=item.volumeInfo.publisher;
     bookLink1=item.volumeInfo.previewLink;
+    img = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
 
-  document.getElementById("results").innerHTML += '<div">' + formatPrint(title1,author1,publisher1,bookLink1) + '</div>';
+  document.getElementById("results").innerHTML += '<div">' + formatPrint(title1,author1,publisher1,bookLink1,img) + '</div>';
 
 
     //image missing
@@ -77,13 +74,14 @@ function printResults(res){
 */
 
 
-function formatPrint(titles,authors,publishers,bookLinks){
+function formatPrint(titles,authors,publishers,bookLinks,bookImg){
   var htmlCard =
   `
           <div>
             <h5 class =""> ${titles} </h5>
             <p class =""> Author: ${authors} </p>
             <p class =""> Publisher: ${publishers} </p>
+            <img src = "${bookImg}">
             <p class =""> link: ${bookLinks} </p>
           </div>
 
